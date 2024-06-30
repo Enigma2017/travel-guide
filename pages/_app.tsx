@@ -1,6 +1,8 @@
 'use client';
 import type { AppProps } from 'next/app';
 import { PrimeReactProvider } from 'primereact/api';
+import { Header } from '../components/organisms/Header';
+import { Footer } from '../components/organisms/Footer';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 //import { wrapper } from '@/lib/RTK/store';
 //import '@/styles/globals.css'; 
@@ -9,7 +11,9 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <PrimeReactProvider>
+        <Header />
         <Component {...pageProps} />
+        <Footer />
     </PrimeReactProvider>
   );
 }
