@@ -1,21 +1,23 @@
 import { Button } from 'primereact/button';
-import { CardMain } from '../components/organisms/cardMain';
 
 export default function Home() {
     return(
         <main className='main'>
-            <section>
+            <header>
                 <div className='container'>
-                    <h1>Home</h1>
+                    <div>
+                        <div>Logo</div>
+                        <nav>
+                            <ul>
+                                <li>About</li>
+                                <li>Country</li>
+                                <li>Sign In</li>
+                            </ul>
+                        </nav>
+                    </div>
+
                 </div>
-            </section>
-            <section>
-                <div className='container'>
-                    <CardMain />
-                    <CardMain />
-                    <CardMain />
-                </div>
-            </section>
+            </header>
         </main>
     )
 } 
