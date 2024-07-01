@@ -1,23 +1,9 @@
-import { Button } from 'primereact/button';
+import { HeaderBlock } from '../components/organisms/HeaderBlock';
 
 export default function Home() {
     return(
         <main className='main'>
-            <header>
-                <div className='container'>
-                    <div>
-                        <div>Logo</div>
-                        <nav>
-                            <ul>
-                                <li>About</li>
-                                <li>Country</li>
-                                <li>Sign In</li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                </div>
-            </header>
+            <HeaderBlock />
         </main>
     )
 } 
